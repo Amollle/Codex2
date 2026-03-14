@@ -1,0 +1,188 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Fraunces:wght@600;700&display=swap');
+
+:root {
+  --ink: #0b1c2e;
+  --muted: #35506a;
+  --sea-foam: #d7f5ff;
+  --lagoon: #9ad8ff;
+  --deep: #1b4d82;
+  --wave: #7fc6ff;
+  --shadow: rgba(8, 24, 40, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", system-ui, sans-serif;
+  color: var(--ink);
+  background: radial-gradient(1200px 800px at 10% 10%, #bfe7ff, transparent 60%),
+              radial-gradient(900px 700px at 90% 20%, #8cc9ff, transparent 55%),
+              linear-gradient(160deg, var(--sea-foam), #ffffff 60%);
+  min-height: 100vh;
+}
+
+.page {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 72px 20px 64px;
+  z-index: 2;
+}
+
+.hero {
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 20px 50px var(--shadow);
+  backdrop-filter: blur(8px);
+  animation: rise 700ms ease-out;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-family: "Fraunces", serif;
+  font-size: clamp(32px, 5vw, 52px);
+}
+
+.lede {
+  margin: 0 0 18px;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--wave);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card {
+  margin-top: 28px;
+  padding: 26px 28px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 16px 36px var(--shadow);
+  animation: fadeIn 700ms ease-out;
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.pet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.pet {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #edf8ff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cat-photo {
+  margin: 18px 0 0;
+  display: grid;
+  gap: 8px;
+}
+
+.cat-photo img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(8, 24, 40, 0.12);
+  box-shadow: 0 16px 30px var(--shadow);
+}
+
+.cat-photo figcaption {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.glow {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(520px 520px at 30% 80%, rgba(127, 198, 255, 0.35), transparent 60%),
+              radial-gradient(620px 620px at 80% 70%, rgba(154, 216, 255, 0.4), transparent 65%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter><rect width="120" height="120" filter="url(%23n)" opacity="0.06"/></svg>');
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding-top: 48px;
+  }
+
+  .hero,
+  .card {
+    padding: 22px;
+  }
+}
