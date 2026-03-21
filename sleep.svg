@@ -1,0 +1,32 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <defs>
+    <linearGradient id="cloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" />
+      <stop offset="1" stop-color="#eef7f1" />
+    </linearGradient>
+    <linearGradient id="blanket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfe7db" />
+      <stop offset="1" stop-color="#9fceb7" />
+    </linearGradient>
+  </defs>
+  <rect width="220" height="220" rx="36" fill="#f6fbf8" />
+  <circle cx="48" cy="60" r="6" fill="#b7d9c8" />
+  <circle cx="68" cy="48" r="4" fill="#b7d9c8" />
+  <circle cx="82" cy="68" r="3" fill="#b7d9c8" />
+  <g>
+    <ellipse cx="110" cy="130" rx="70" ry="40" fill="url(#blanket)" />
+    <rect x="40" y="110" width="140" height="50" rx="24" fill="url(#blanket)" />
+  </g>
+  <g>
+    <ellipse cx="110" cy="102" rx="52" ry="32" fill="url(#cloud)" stroke="#d7efe2" stroke-width="3" />
+    <circle cx="88" cy="100" r="5" fill="#0f3d2b" />
+    <circle cx="132" cy="100" r="5" fill="#0f3d2b" />
+    <path d="M96 110 q14 10 28 0" fill="none" stroke="#0f3d2b" stroke-width="3" stroke-linecap="round" />
+    <circle cx="76" cy="108" r="6" fill="#ffb7d5" opacity="0.7" />
+    <circle cx="144" cy="108" r="6" fill="#ffb7d5" opacity="0.7" />
+  </g>
+  <g>
+    <text x="150" y="55" font-family="Hachi Maru Pop, Hubballi, cursive" font-size="24" fill="#0f3d2b">Z</text>
+    <text x="170" y="70" font-family="Hachi Maru Pop, Hubballi, cursive" font-size="18" fill="#0f3d2b">z</text>
+  </g>
+</svg>
