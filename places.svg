@@ -1,0 +1,20 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <defs>
+    <linearGradient id="pin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfe7db" />
+      <stop offset="1" stop-color="#9fceb7" />
+    </linearGradient>
+  </defs>
+  <rect width="220" height="220" rx="36" fill="#f6fbf8" />
+  <g>
+    <circle cx="110" cy="96" r="52" fill="url(#pin)" stroke="#0f3d2b" stroke-width="4" />
+    <circle cx="110" cy="96" r="20" fill="#ffffff" stroke="#0f3d2b" stroke-width="4" />
+    <path d="M110 150 C80 128 64 110 64 96 C64 68 86 46 110 46 C134 46 156 68 156 96 C156 110 140 128 110 150 Z" fill="url(#pin)" opacity="0.65" />
+  </g>
+  <g>
+    <circle cx="62" cy="162" r="6" fill="#9fceb7" />
+    <circle cx="78" cy="172" r="4" fill="#b7d9c8" />
+    <circle cx="94" cy="164" r="3" fill="#b7d9c8" />
+  </g>
+  <text x="104" y="188" font-family="Hachi Maru Pop, Hubballi, cursive" font-size="22" fill="#0f3d2b">Go!</text>
+</svg>

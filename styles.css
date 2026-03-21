@@ -122,6 +122,36 @@ h3 {
   height: 84px;
 }
 
+.interest-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.interest-link:hover,
+.interest-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px var(--shadow);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--wave);
+  color: var(--deep);
+  font-weight: 600;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  filter: brightness(0.95);
+}
+
 .pet-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
