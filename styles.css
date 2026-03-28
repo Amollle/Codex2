@@ -101,6 +101,18 @@ h3 {
   color: var(--muted);
 }
 
+.game-link {
+  color: var(--deep);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+.game-link:hover,
+.game-link:focus-visible {
+  border-bottom-color: var(--deep);
+}
+
 .interest-grid {
   display: grid;
   gap: 14px;
